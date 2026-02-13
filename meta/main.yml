@@ -1,0 +1,26 @@
+---
+galaxy_info:
+  role_name: ansible_docker
+  author: Dan Wallace
+  description: Base Docker service deployment role using docker-compose v2
+  license: MIT
+  min_ansible_version: "2.15"
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - focal
+        - jammy
+        - noble
+    - name: Debian
+      versions:
+        - bullseye
+        - bookworm
+
+  galaxy_tags:
+    - homelab
+    - docker
+    - containers
+    - deployment
+
+dependencies: []

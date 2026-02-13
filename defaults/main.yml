@@ -1,0 +1,6 @@
+#SPDX-License-Identifier: MIT-0
+---
+# defaults file for ansible_docker
+
+ansible_docker_service: # e.g what app you're running with docker
+ansible_docker_compose_file: # location of docker compose file to copy
