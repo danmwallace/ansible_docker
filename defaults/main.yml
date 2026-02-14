@@ -2,5 +2,18 @@
 ---
 # defaults file for ansible_docker
 
-ansible_docker_service: # e.g what app you're running with docker
-ansible_docker_compose_file: # location of docker compose file to copy
+
+###################################################################################
+#                         Docker Configuration
+###################################################################################
+
+# Docker Compose download URI
+# Update this to the latest version from: https://github.com/docker/compose/releases
+docker_compose_uri: "https://github.com/docker/compose/releases/download/v5.0.2/docker-compose-linux-x86_64"
+
+# Docker packages for Fedora
+# Used for Fedora server (non-atomic) installations
+docker_fedora_packages:
+  - docker-ce
+  - docker-compose-plugin
+  - containerd.io
